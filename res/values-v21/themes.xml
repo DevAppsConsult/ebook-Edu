@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EcoachBooksActionBarTheme" parent="Theme.AppCompat.NoActionBar">
+<!--
+        <item name="android:actionBarStyle">@style/EcoachBooksActionBar</item>
+-->
+      <!--  <item name="android:actionBarTabBarStyle">@style/EcoachBooksActionBarTabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/EcoachBooksActionBarTabText</item>
+        <item name="android:actionBarTabStyle">@style/EcoachBooksActionBarTabStyle</item>-->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+    </style>
+</resources>

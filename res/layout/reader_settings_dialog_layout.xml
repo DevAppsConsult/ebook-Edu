@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Size"
+        android:id="@+id/textSizeView"
+        android:layout_weight="0.02"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textSizeDisplay"
+        android:layout_alignTop="@+id/decreaseFontSizeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/decreaseFontSizeButton"
+        android:textIsSelectable="false"
+        android:textSize="32dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/increaseFontSizeButton"
+        android:layout_marginLeft="27dp"
+        android:layout_alignTop="@+id/textSizeDisplay"
+        android:layout_toRightOf="@+id/textSizeDisplay"
+        android:textSize="26dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/decreaseFontSizeButton"
+        android:layout_marginRight="25dp"
+        android:textSize="26dp"
+        android:layout_below="@+id/textSizeView"
+        android:layout_toLeftOf="@+id/textSizeDisplay" />
+
+</RelativeLayout>

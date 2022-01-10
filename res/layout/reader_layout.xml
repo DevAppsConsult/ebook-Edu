@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReaderActivity">
+
+    <include layout="@layout/tool_bar"/>
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+    </FrameLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/bookReaderDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/readerWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ecoachsolutions.ecoachbooks.Helpers.ObservableWebView
+                android:id="@+id/bookChapterContents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/contentReaderButtonBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <Button
+                    android:id="@+id/previous_chapter_button"
+                    android:layout_width="@dimen/page_turn_btn_width"
+                    android:layout_height="@dimen/page_turn_btn_height"
+                    android:background="@drawable/page_turn_btn"
+                    android:text="&lt;&lt;" />
+
+                <Button
+                    android:id="@+id/readerViewCommentsButton"
+                    android:layout_width="@dimen/page_turn_btn_width"
+                    android:layout_height="@dimen/page_turn_btn_height"
+                    android:background="@drawable/page_turn_btn"
+                    android:text="@string/prompt_comment"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/readerShareButton"
+                    android:layout_width="@dimen/page_turn_btn_width"
+                    android:layout_height="@dimen/page_turn_btn_height"
+                    android:background="@drawable/page_turn_btn"
+                    android:text="@string/prompt_share"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/next_chapter_button"
+                    android:layout_width="@dimen/page_turn_btn_width"
+                    android:layout_height="@dimen/page_turn_btn_height"
+                    android:background="@drawable/page_turn_btn"
+                    android:text="&gt;&gt;" />
+
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- The navigation drawer -->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="left|start"
+            android:background="@drawable/navdrawer_backgroundcolor"
+            android:orientation="vertical">
+
+            <!--
+                 TextView
+                android:id="@+id/chapter_selector_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="18sp"
+                android:text="@string/chapter_list_title_text" /-->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:id="@+id/chapterListHeader"
+                android:layout_gravity="top" />
+
+            <ListView
+                android:id="@+id/chapterList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:choiceMode="singleChoice"
+                android:minHeight="48dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+            <!--android:divider="@drawable/listdivider"
+            android:dividerHeight="1px"-->
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

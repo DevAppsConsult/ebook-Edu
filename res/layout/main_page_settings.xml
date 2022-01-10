@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="250dp"
+>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_update_period"
+        android:id="@+id/automaticUpdateToggle"
+        android:layout_gravity="right"
+        android:checked="true"
+        android:layout_margin="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:onClick="OnUpdateToggleClicked"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateMethodRadioGroup"
+        android:layout_below="@+id/automaticUpdateToggle"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_wifi_only"
+            android:id="@+id/downloadOverWifi"
+            android:layout_alignTop="@+id/updateMethodRadioGroup"
+            android:layout_toRightOf="@+id/rowText"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_wifi_and_data"
+            android:id="@+id/downloadOverWifiAndData"
+            android:layout_alignLeft="@+id/updateMethodRadioGroup" />
+    </RadioGroup>
+
+</RelativeLayout>

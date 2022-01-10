@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/newCommentEditText"
+        android:layout_gravity="start|top|left|center_horizontal"
+        android:lines="10"
+        android:hint="@string/msg_start_typing"
+        android:gravity="top|left"
+        android:maxLines="2000" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="EcoachBooksActionBarTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+    </style>
+
+    <style name="EcoachBooksThemeNoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <!--<item name="android:textColor">#FFFFFF</item>-->
+
+    </style>
+
+    <style name="EcoachBooksThemeLight" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimaryInverse">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+
+    </style>
+
+</resources>

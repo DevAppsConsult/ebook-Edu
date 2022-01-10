@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#fff59220</color>
+    <color name="primaryColorDark">#ffcf7520</color>
+    <color name="ecoach_orange">#fff59220</color>
+    <color name="navdrawer_backgroundcolor">#ffffffff</color>
+</resources>

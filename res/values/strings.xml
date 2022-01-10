@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eCoachBooks</string>
+    <!-- Section names -->
+    <string name="title_section1">My Shelf</string>
+    <string name="title_section2">Library</string>
+    <string name="title_section3">Recommended</string>
+    <string name="search_books_hint">Title or Author</string>
+    <!--Settings page -->
+    <string name="setting_wifi_only">Download over WiFi only</string>
+    <string name="setting_wifi_and_data">Download over WiFi and Data</string>
+    <!-- Actions -->
+    <string name="action_settings">Settings</string>
+    <string name="action_signin">Sign In</string>
+    <string name="action_signout">Sign Out</string>
+    <string name="action_about">About</string>
+    <string name="action_checkupdates">Update…</string>
+    <string name="action_sync">Sync</string>
+    <string name="action_clearshelf">Clear Shelf</string>
+    <string name="action_goto_site">Visit Website</string>
+    <string name="action_help">Help &amp; Feedback</string>
+    <string name="action_shop">Shop</string>
+    <string name="action_home">Home</string>
+
+    <string name="prompt_share">Share</string>
+    <string name="prompt_comment">Comment</string>
+    <string name="prompt_submit">Submit</string>
+
+    <!--Home page nav-->
+    <string name="accountBalanceLabel">Balance:</string>
+
+    <!--  -->
+    <string name="basepath">/sdcard/ebooks/</string>
+    <string name="book_preferences">ecoachBooksPreferences</string>
+    <string name="version_label">Version</string>
+
+    <!-- Welcome activity strings -->
+    <string name="welcome_message_header">Welcome to eCoach Books</string>
+    <string name="welcome_message1">We\'ve designed this app around your needs. To make it simpler and faster
+    for you, the modern scholar, to access the wealth of information around you. We think you\'ll love it.</string>
+    <string name="ecoach_slogan">Making Excellence Possible</string>
+
+    <!-- End welcome activity strings -->
+
+    <!-- Header texts -->
+    <string name="shelf_header_text">Shelf</string>
+    <string name="library_header_text">Library</string>
+
+    <!-- About activity texts -->
+    <string name="license_header_text">Licenses</string>
+
+    <!-- Login page texts -->
+    <string name="user_name_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="password2_text">Confirm Password</string>
+    <string name="email_text">Email</string>
+    <string name="fname_text">First Name</string>
+    <string name="lname_text">Last Name</string>
+    <string name="country_text">Country</string>
+    <string name="school_text">School</string>
+    <string name="phone_text">Phone Number</string>
+    <string name="signin_button_text">Sign In</string>
+    <string name="signup_button_text">Sign Up</string>
+    <string name="signup_prompt_text">Don\'t have an account?</string>
+    <string name="signin_prompt_text">Already have an account?</string>
+    <string name="signup_next_text">Next</string>
+    <string name="signup_prev_text">Previous</string>
+    <string name="signin_progress_text">Logging you in … </string>
+    <string name="signout_progress_text">Logging you out … </string>
+    <string name="signup_progress_text">Creating your account … </string>
+    <string name="drawer_open">View Chapters</string>
+    <string name="drawer_close">Close Chapters</string>
+    <string name="chapter_list_title_text">Select the chapter you want from below</string>
+    <string name="ecoachbooks_path">ecoachbooks/ebooks</string>
+    <string name="ecoachbookcovers_path">ecoachbooks/ebooks/covers</string>
+    <string name="ecoachbookscache_path">ecoachbooks/_cache</string>
+    <string name="ecoachbooks_extension_filter">epub</string>
+    <string name="emptyshelf_text">Welcome! Tap on any of the books in your library below to add them to your shelf</string>
+    <string name="emptylibrary_text">There are no books in your library. You can tap sync button to check for new books</string>
+    <string name="chapter_test_button_text">Take test on this chapter</string>
+    <string name="defaultTextZoom">120</string>
+    <string name="set_update_period">Automatically check for new books</string>
+    <string name="update_frequency_text_1">Check every</string>
+    <string name="update_frequency_text_2">minutes</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+
+
+    <string name="prompt_stop_downloading">Do you want to stop downloading {{0}}? (Tap the book to again to restart the download)</string>
+    <string name="prompt_start_downloading">Do you want to download {{0}}? (Tap the book to cancel the download after it has started)</string>
+
+    <integer name="default_update_frequency">5</integer>
+
+    <!--Titles-->
+    <string name="title_please_wait">Please wait</string>
+    <string name="title_generic_error">Something went wrong :(</string>
+    <string name="title_loading_text">Loading</string>
+
+    <!--Messages-->
+    <string name="msg_remove_book_confirmation">Do you want to remove this book from your device?</string>
+    <string name="msg_install_file_manager">Please install a File Manager</string>
+    <string name="msg_select_epub_book">Please select a book ending with .epub</string>
+    <string name="msg_select_adding_book">Adding \'{{0}}\' to your library</string>
+    <string name="msg_select_adding_book_generic">Adding book to your library</string>
+    <string name="msg_revalidation_error">We could not authenticate you with the credentials provided and will be unable to fetch new books for you until you re-validate.
+        Tap yes below to be taken to the login page to re-enter your credentials.</string>
+    <string name="msg_select_a_file">Select a file</string>
+    <string name="msg_finished_downloading_book">Finished downloading {{0}}</string>
+    <string name="msg_download_book_cancelled">{{0}} download cancelled</string>
+    <string name="msg_checking_for_new_books">Checking for new books…</string>
+    <string name="msg_has_latest_version">You already have the latest version</string>
+    <string name="msg_not_online">Please make sure you\'re online and try again</string>
+    <string name="msg_new_app_update">Version {{0}} is ready for installation</string>
+    <string name="msg_https_disable_warning">WARNING: Do you want to disable encryption for this app session? Doing this will make your account exposed to hacking
+    and identity theft. DO NOT USE THIS WITH AN ADMINISTRATOR ACCOUNT.</string>
+    <string name="msg_sign_out_confirm">Do you want to sign out?</string>
+    <string name="msg_saving_comment">Saving your comment…</string>
+    <string name="msg_comment_will_be_uploaded_when_online">Your comment will be uploaded when you\'re online next.</string>
+    <string name="msg_start_typing">Start typing…</string>
+    <!-- Comments -->
+    <string name="msg_no_comments">Looks like no one has commented here yet :(. Hit the "+" below and be the first!</string>
+
+
+
+    <string name="title_something_went_wrong">Something went wrong</string>
+    <string name="title_update_found">Update found</string>
+    <string name="title_lower_security">Lowering Security</string>
+    <string name="title_getting_comments">Fetching Comments…</string>
+    <string name="title_no_comments">No comments</string>
+
+    <!-- Error strings -->
+    <string name="LoginActivityValidationError">Please correct the errors above</string>
+    <string name="UsernameRequiredError">Please provide a username</string>
+    <string name="PasswordRequiredError">Please provide a password</string>
+    <string name="Password2RequiredError">Please confirm your password</string>
+    <string name="EmailRequiredError">Please provide an email address</string>
+    <string name="CountryRequiredError">Please provide a country</string>
+    <string name="PhoneRequiredError">Please provide a phone number</string>
+    <string name="SchoolRequiredError">Please provide your school name</string>
+    <string name="FirstNameRequiredError">Please provide your first name</string>
+    <string name="LastNameRequiredError">Please provide your last name</string>
+    <string name="PasswordsDoNotMatchError">Please make sure your passwords match</string>
+    <string name="InvalidCredentialsError">Invalid credentials</string>
+    <string name="SignUpError">Something went wrong while trying to create your account :(. Please try again</string>
+    <string name="SignInError">Something went wrong while trying to log you in :(. Please try again</string>
+    <string name="please_connect_to_internet">Please connect to the internet first</string>
+
+    <!--Errors-->
+    <string name="error_failed_to_load_content">Oops! Something went wrong while trying to load this content. We are sending a message to our engineers to look into it ASAP.</string>
+    <string name="error_failed_to_save_comment">Could not save your comment, please make sure you have enough space and try again later.</string>
+    <string name="error_failed_to_post_comment">Could not upload your comment :(. We will try again in a few minutes.</string>
+
+    <!--Private-->
+    <string name="SyncAuthority">com.ecoachsolutions.ecoachbooks.bookssync.provider</string>
+
+    <!-- automatic update frequency -->
+    <string-array name="auto_update_frequency_options">
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <drawable name="grid_color_selector">#e9d9c8</drawable>
+    <drawable name="transparent">#80e9d9c8</drawable>
+    <drawable name="navdrawer_backgroundcolor">#ffffffff</drawable>
+    <drawable name="navdrawer_textcolor">#ff101010</drawable>
+    <drawable name="reader_text_backgroundcolor">#FEFEFE</drawable>
+    <drawable name="not_downloaded_book_tint">#c8676767</drawable>
+    <drawable name="ecoach_orange">#fff59220</drawable>
+
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_shopping">ShoppingActivity</string>
+    <string name="title_activity_about_app">AboutAppActivity</string>
+    <string name="title_activity_reader">Reader</string>
+    <string name="title_activity_comments_view">Comments</string>
+    <string name="book_cover_description">BookCover</string>
+
+
+    <!--Placeholders-->
+    <string name="placeholder_commenter_name">Name</string>
+    <string name="placeholder_comment_content">Comment</string>
+
+</resources>

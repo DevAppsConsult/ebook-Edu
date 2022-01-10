@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<item>
+    <layer-list>
+        <item android:drawable="@drawable/page_turn_btn_shadow" android:top="1.5dp"></item>
+        <item android:bottom="1dp" android:left="0.9dp" android:right="0.9dp">
+            <shape android:shape="rectangle" >
+                <corners  android:radius="8dp" />
+                <solid android:color="#ffd57221" />
+            </shape>
+        </item>
+    </layer-list>
+</item>
+</selector>

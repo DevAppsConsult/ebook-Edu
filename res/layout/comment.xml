@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="@color/cardview_light_background"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    android:clickable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/authorInfo"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:gravity="bottom"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/commentContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:text="@string/placeholder_comment_content"
+            android:textColor="#333333" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

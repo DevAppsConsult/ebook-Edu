@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="130dp"
+    android:background="@drawable/burnt_wood_texture_sm">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/userProfileImage"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/generic_user_pic_circle_100"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="username"
+        android:id="@+id/userNameDisplay"
+        android:layout_marginTop="31dp"
+        android:layout_alignTop="@+id/userProfileImage"
+        android:layout_toRightOf="@+id/userProfileImage"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textColor="#ffffffff"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/accountBalanceLabel"
+        android:id="@+id/accountBalanceLabel"
+        android:layout_below="@+id/userNameDisplay"
+        android:layout_toRightOf="@+id/userProfileImage"
+        android:layout_marginLeft="5dp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0.00"
+        android:id="@+id/accountBalanceText"
+        android:layout_alignTop="@+id/accountBalanceLabel"
+        android:layout_toRightOf="@+id/accountBalanceLabel"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

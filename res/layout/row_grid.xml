@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/grid_margin"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/grid_margin" >
+
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="@dimen/grid_column_width"
+        android:layout_height="@dimen/grid_column_width"
+        android:contentDescription="BookCover" android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" android:tint="@drawable/not_downloaded_book_tint"/>
+
+    <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/download_book_icon"
+            android:src="@drawable/download_book_icon"
+            android:clickable="true"
+        android:layout_alignBottom="@+id/bookCover"
+        android:layout_alignRight="@+id/bookCover"
+        android:layout_alignEnd="@+id/bookCover"
+        android:layout_marginRight="20dp" />
+    <TextView
+        android:id="@+id/bookTile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/bookTitleSize" android:layout_alignParentLeft="false"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/bookCover"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

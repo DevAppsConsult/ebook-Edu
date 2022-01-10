@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:id="@+id/homeNavItem" android:icon="@drawable/ic_home_dark"
+     android:title="@string/action_home"
+     android:checked="true"/>
+ <item android:id="@+id/shopNavItem" android:icon="@drawable/ic_shop_dark"
+     android:title="@string/action_shop" />
+ <item android:id="@+id/settingsNavItem" android:icon="@drawable/ic_settings_dark"
+     android:title="@string/action_settings" />
+ <item android:id="@+id/helpNavItem" android:icon="@drawable/ic_help_dark"
+     android:title="@string/action_help" />
+ <item android:id="@+id/aboutNavItem" android:icon="@drawable/ic_about_dark"
+     android:title="@string/action_about" />
+</menu>

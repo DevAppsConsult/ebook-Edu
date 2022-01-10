@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/signup_button"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:gravity="center_vertical|center_horizontal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="99dp"
+        android:layout_above="@+id/userName"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="ecoach logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/ecoachbooks_logo_transparent_sm" />
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.51">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:hint="@string/user_name_text"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_sm"
+                 />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:ems="10"
+                android:hint="@string/email_text"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_sm" android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:ems="10"
+                android:hint="@string/phone_text"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_sm"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/userPass"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:hint="@string/password_text"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+
+            <EditText
+                android:id="@+id/userPass2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:hint="@string/password2_text"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_sm"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/signUpNextButton"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:text="@string/signup_next_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@drawable/ecoach_orange"
+                android:textSize="@dimen/text_size_sm"
+                android:background="@drawable/signup_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"> </LinearLayout>
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:ems="10"
+                android:hint="@string/fname_text"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_sm" />
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:ems="10"
+                android:hint="@string/lname_text"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_sm" />
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:ems="10"
+                android:hint="@string/country_text"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_sm"
+                android:layout_marginTop="10dp" />
+
+
+            <EditText
+                android:id="@+id/school"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:height="@dimen/login_input_text_height"
+                android:background="@drawable/login_fields_bg"
+                android:ems="10"
+                android:hint="@string/school_text"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_sm" />
+
+            <Button
+                android:id="@+id/signUpPrevButton"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:text="@string/signup_prev_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@drawable/ecoach_orange"
+                android:textSize="@dimen/text_size_sm"
+                android:background="@drawable/signup_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ViewSwitcher>
+
+
+    <Button
+        android:id="@+id/doActionButton"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/signin_button"
+        android:text="@string/signin_button_text"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/text_size_md" />
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+        <Button
+        android:id="@+id/toggleActionButton"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:background="@drawable/signup_button"
+        android:text="@string/signup_button_text"
+        android:textColor="@drawable/ecoach_orange"
+        android:textSize="@dimen/text_size_sm"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_prompt_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@drawable/navdrawer_textcolor"
+        android:textSize="@dimen/text_size_xs"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp" />
+</RelativeLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ecoachsolutions.ecoachbooks">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!--
+  <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    -->
+    <application
+        android:name=".EcoachBooksApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ecoach_logo"
+        android:label="@string/app_name"
+        android:theme="@style/EcoachBooksActionBarTheme">
+
+        <!-- Activities -->
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <!-- Entry for ReaderActivity class -->
+        <activity
+            android:name=".ReaderActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Books Activity" />
+
+        <activity
+            android:name=".CommentViewActivity"
+            android:parentActivityName=".ReaderActivity"
+            android:label="@string/title_activity_comments_view"
+            android:excludeFromRecents="true"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ecoachsolutions.ecoachbooks.CommentViewActivity" />
+        </activity>
+        <!-- Entry for Login class -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ipaulpro.afilechooser.FileChooserActivity"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_add_white_24dp"
+            android:label="@string/choose_file">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome" />
+        <activity
+            android:name=".ShoppingActivity"
+            android:label="@string/title_activity_shopping"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ecoachsolutions.ecoachbooks.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".AboutAppActivity"
+            android:label="@string/title_activity_about_app"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ecoachsolutions.ecoachbooks.HomeActivity" />
+        </activity>
+
+        <service
+            android:name=".Services.AuthenticatorService"
+            android:exported="true"
+            android:process=":auth">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name=".Services.CleanupService"
+            android:exported="false"
+            android:process=":cleanup" />
+        <service
+            android:name=".Services.BookUpdaterService"
+            android:exported="false" />
+        <service
+            android:name=".Services.BookSyncService"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/booksyncadapter" />
+        </service>
+        <service
+            android:name=".Services.CommentUploadService"
+            android:exported="false" />
+
+        <provider
+            android:name=".Core.Sync.EcoachBooksContentProvider"
+            android:authorities="@string/SyncAuthority"
+            android:exported="false"
+            android:syncable="true" />
+
+        <!--
+              <meta-data
+              android:name="com.google.android.gms.version"
+              android:value="@integer/google_play_services_version" />
+        -->
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c72a8e43572007346bb267843e2491c61cb3495e" />
+        <meta-data
+            android:name="LOCALYTICS_APP_KEY"
+            android:value="33723f1ad29f86b0db8975f-a2841a5e-eea0-11e5-6cf3-002dea3c3994" />
+
+    </application>
+
+</manifest>

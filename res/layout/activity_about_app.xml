@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ecoachsolutions.ecoachbooks.AboutAppActivity">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/toolBarInclude" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/toolBarInclude"
+        android:weightSum="1">
+
+    <TextView android:text="@string/version_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/appVersionText"
+            android:layout_below="@+id/text1"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/license_header_text"
+        android:id="@+id/textView2"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/appVersionText"
+        android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Apache License 2.0"
+            android:id="@+id/apacheLicenseLink20"
+            android:linksClickable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="-apache commons-compress \n-apache-commons-io \n-apache-commons-lang \n-apache-commons-collections \n-RxJava and RxAndroid by Netflix Inc. \n- Picasso, OkHttp, Retrofit by Square Inc."
+            android:singleLine="false"
+            android:id="@+id/apacheLicensedLibs"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Creative Commons Attribution"
+            android:id="@+id/creativeCommonsLink"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="- icons8"
+            android:id="@+id/icons8link"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Dark Wood Picture"
+            android:id="@+id/userBgCredit"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Petr Kratochvil"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="http://www.publicdomainpictures.net/view-image.php?image=24099"
+            android:id="@+id/textView4"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+</RelativeLayout>
